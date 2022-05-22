@@ -1,0 +1,580 @@
+# paste-feats --length-tolerance=2 "ark:compute-mfcc-feats  --write-utt2dur=ark,t:../features/logs/make_mfcc_pitch/train/utt2dur.1 --verbose=2     --config=conf/mfcc.conf scp,p:../features/logs/make_mfcc_pitch/train/wav_test.1.scp ark:- |" "ark,s,cs:compute-kaldi-pitch-feats --verbose=2       --config=conf/pitch.conf scp,p:../features/logs/make_mfcc_pitch/train/wav_test.1.scp ark:- |     process-kaldi-pitch-feats  ark:- ark:- |" ark:- | copy-feats --compress=true --write-num-frames=ark,t:../features/logs/make_mfcc_pitch/train/utt2num_frames.1 ark:- ark,scp:/mnt/c/Users/jjlee/Documents/__School/CS/6998_Speech_Recognition/kaldi/egs/open_set_lid/s5_r3/scripts/../features/mfcc_pitch/TR/raw_mfcc_pitch_test.1.ark,/mnt/c/Users/jjlee/Documents/__School/CS/6998_Speech_Recognition/kaldi/egs/open_set_lid/s5_r3/scripts/../features/mfcc_pitch/TR/raw_mfcc_pitch_test.1.scp 
+# Started at Sun May  8 19:13:54 EDT 2022
+#
+paste-feats --length-tolerance=2 'ark:compute-mfcc-feats  --write-utt2dur=ark,t:../features/logs/make_mfcc_pitch/train/utt2dur.1 --verbose=2     --config=conf/mfcc.conf scp,p:../features/logs/make_mfcc_pitch/train/wav_test.1.scp ark:- |' 'ark,s,cs:compute-kaldi-pitch-feats --verbose=2       --config=conf/pitch.conf scp,p:../features/logs/make_mfcc_pitch/train/wav_test.1.scp ark:- |     process-kaldi-pitch-feats  ark:- ark:- |' ark:- 
+copy-feats --compress=true --write-num-frames=ark,t:../features/logs/make_mfcc_pitch/train/utt2num_frames.1 ark:- ark,scp:/mnt/c/Users/jjlee/Documents/__School/CS/6998_Speech_Recognition/kaldi/egs/open_set_lid/s5_r3/scripts/../features/mfcc_pitch/TR/raw_mfcc_pitch_test.1.ark,/mnt/c/Users/jjlee/Documents/__School/CS/6998_Speech_Recognition/kaldi/egs/open_set_lid/s5_r3/scripts/../features/mfcc_pitch/TR/raw_mfcc_pitch_test.1.scp 
+compute-mfcc-feats --write-utt2dur=ark,t:../features/logs/make_mfcc_pitch/train/utt2dur.1 --verbose=2 --config=conf/mfcc.conf scp,p:../features/logs/make_mfcc_pitch/train/wav_test.1.scp ark:- 
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ce826012-1aa3-43e4-9b0b-415484bd4dda
+compute-kaldi-pitch-feats --verbose=2 --config=conf/pitch.conf scp,p:../features/logs/make_mfcc_pitch/train/wav_test.1.scp ark:- 
+process-kaldi-pitch-feats ark:- ark:- 
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ce98fbf0-090a-4234-a30d-5357d6ece3c4
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ce9c983c-8ee8-487b-9c8c-3644d054e57a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ce9ccf44-aa48-47c1-bfee-3ba44518e102
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key cea2d8f7-6aab-49e9-b19f-0537e1584cb3
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key cea5ca71-d81a-4db1-8f1f-07d892e0fecf
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key cea991e4-7a64-4015-803c-709fe1dd16f2
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ceba8930-8a13-4995-93f8-ef1c78a5b63b
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key cee40a47-7a92-4609-bf3c-50893529a56d
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key cef69461-3f76-4a66-b066-b049b87c66cc
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key cef98f42-c008-496d-af63-c3755147ce28
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key cf0fe00b-b00c-4ca4-a500-198877dfa267
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key cf161c80-0d4d-491e-b272-e22606a8ee9b
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key cf1fd32e-c862-429e-989e-d34d9be889a8
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key cf335462-274b-4637-b922-5716a2463ce6
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key cf5091c9-46d3-4587-abaf-3daccea53f36
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key cf539438-b2fe-42bf-a948-260eff6a6108
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key cf54ef60-c043-4b82-a0a3-f6750d17165a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key cf822c7c-80b5-4d5f-8c88-3157ad449dd5
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 20 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key cfc116fd-ea1a-4e8f-8608-24ce1b46ae98
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key cfc702db-8ee1-4d30-aec8-b0b4b9e91bca
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key cfce08ff-dccb-4120-a844-edac8dca9120
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key cfd50cee-a74b-43ae-b995-a34726a59a27
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key cfe61ee5-7ef8-49b9-a034-eb9fa1076ae0
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d0029aa7-f4e6-4e75-9af6-de1eefa913d7
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d017a6d9-5ef9-444c-ac6e-b9e46bea5c2d
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d0472f8a-fea1-435d-9a46-6cbaed510797
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d053dee8-4229-47ea-bf57-86e2c6f77aac
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d095d8f6-d908-4747-92c1-6466893f79cf
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 30 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d09d5b64-4e74-4cc0-bd68-a4643984828d
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d0a2fbf6-c193-4ba7-864f-e168b86259ec
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d0a7a3d2-85fd-4102-89c7-cd9c3b3d455a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d0a94d23-8784-42d3-80b6-941e1d857c11
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d0b499ab-1aae-423e-abb5-b72f3b5375f7
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d0b4ea72-c6fa-4fc6-b62e-20b9bd4ffd95
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d0bc2560-8f06-4b49-81ec-cf17c7496540
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d0d4a434-3e04-49c7-ab3b-aca171989666
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d0efefdb-0f3d-41c8-9c5b-c85a84f422bd
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d12d2d19-e503-4792-8454-dfc7d58dad6f
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 40 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d17f1244-2164-4ec6-ac38-3d85e54ca07d
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d1c850e1-ac04-4555-9b4c-044cdb22d4b8
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d1cbeb4d-24e1-4844-a2d7-246c4368f580
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d1d67bf9-7e0c-42dd-b05e-5027fe88ee1f
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d1d9a0b9-4bb4-46aa-a734-17c9cc127848
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d1e73908-5586-4666-891f-bbf1bc688601
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d21bb1f6-08e4-4680-9f1f-72badc2e4086
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d22424ac-a0c0-4bc5-9bf2-198cba5cdd8d
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d247f6b9-2ac7-4c68-a60f-2474f5a235f1
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d251bfb3-67fc-4f61-908f-2bdd4d20dcfc
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 50 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d276573e-a9e8-4f21-a7a2-20f743cfda06
+VLOG[2] (compute-kaldi-pitch-feats[5.5]:main():compute-kaldi-pitch-feats.cc:107) Processed 50 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d27742a5-a374-4a41-8015-389331aa3a0f
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d27f4837-43b6-4ec6-a5dd-4037d1e404f5
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d29a7328-f1b7-41c9-9fd7-9031676e110a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d29c3ff0-1af6-4db6-9a33-86fd7d0b51b8
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d2c05418-e183-4732-ae40-93c20565188d
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d2c2ea9d-4fc0-45ff-af52-80d99ecce36f
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d2d29662-1a42-4e50-9866-5f82591e5194
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d2d29d15-4afb-4f23-99c7-ecc94ae9c827
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d319472a-2c80-4ca8-9543-69d95db97f3b
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 60 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d31b2175-2b72-4f0d-bfdb-909f0c764d59
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d3256cdb-f893-48c5-b369-34f152cfa397
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d358786a-b869-4e20-b68a-aeeef6914bc6
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d3ccfa6f-7e76-43ab-bc57-27ad7250f3a2
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d416d783-2ca7-4859-929a-efe2857549b2
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d420d2b7-f6f1-4db9-af00-bb7f64889316
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d42a5218-e1ef-4900-aa18-63a59e997f45
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d446b521-c112-4133-be84-c7eb860f30c5
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d454c588-87f3-4f54-a02c-e7a0bdd43aff
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d47c5771-d46a-4c3a-b678-95097753eeb5
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 70 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d48820a0-dab2-421e-becd-2a4f0a9db2f7
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d48a7cd7-e419-419d-bae9-7a8bc565d0f5
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d48bf8a2-5bdb-434f-b0de-842160a338e3
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d49acfd9-66d2-45db-ba7d-0dc12ce793b8
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d4a02a0a-70a1-4db5-b5db-1ddffd83f302
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d4c7f6a9-95c6-493b-b045-0a2871c699dd
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d4caddbc-bd34-44d0-bca7-de16f78661f9
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d4db8709-4945-4269-bdec-42231c006593
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d4e89832-c79d-4bb8-9455-f73cba799783
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d505d90c-6809-48b8-b229-e9a78a9e78e8
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 80 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d50b1f76-20ed-43fe-8a6d-b87234d5d9fa
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d513c8aa-2119-4604-a733-a9901fbd3153
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d545834e-4388-4854-a06d-6a6684a63907
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d55903ac-752a-43ca-9723-f18536dc44db
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d5817bd7-bd45-4a28-97e8-b4efa10fad6e
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d585574e-1c8f-4f24-98e0-22aa15f16e0f
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d5d04d5e-5fdb-47f8-913e-a7cd6631ecc5
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d5d52f1a-f1d8-4771-9888-f4783db282d0
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d6001578-3139-4c80-955e-4a754f8a3334
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d607a95f-de68-42e4-811e-aa4803c492ba
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 90 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d6364fe7-94ac-4947-8936-a371df179cc4
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d6404aaa-841d-45e1-81eb-dca15f1b6777
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d65c18a3-f1c0-4968-8da0-41513c57641d
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d6b1ae67-4c01-4ab2-8ed1-7ede96fe6750
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d6b1c799-35e3-4124-9324-c6608613e1f4
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d6e38512-d1d9-4c30-aefa-cbc5b865c2d0
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d71c2026-574a-4ee6-938e-69979ec3248a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d733dda3-570f-450d-a8ae-5f014bc3d681
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d75b9bd8-b774-468a-87ca-99ad57333363
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d760dfe6-b1c5-46c2-8b41-a766ab4d3112
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 100 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d7755131-33a9-4d21-a3d6-59af8ccfcc93
+VLOG[2] (compute-kaldi-pitch-feats[5.5]:main():compute-kaldi-pitch-feats.cc:107) Processed 100 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d7f002af-6cb0-410e-aece-e099d2e0978b
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d7f2c63c-1c2a-49d1-af84-e10452839ff3
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d813066d-5db5-4ec7-9d92-df72365d038f
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d81ceed7-de85-48f8-92d4-bbaff3f70c7a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d880600f-6433-4956-8fed-639c4ef35c5f
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d8934afb-cadc-44c0-af84-b6514698636e
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d89e3b29-0cd4-48a8-9c70-8dff974938fe
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d8ac889c-7123-4866-abb5-7251f04dc7f8
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d8b0f28e-8e27-41ea-9385-f3262a3f10cf
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 110 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d8b62c3e-e6bf-47bc-9813-54b8653b0c58
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d920ddaf-0995-423f-8118-7dce0860cf77
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d974f83a-e47f-4ccb-9e09-bf0fd10ea66a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d9a4a399-89bb-4bea-86be-b9666f626e71
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d9a6c654-6f77-4ee1-8b1b-3aa933b9747b
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d9b33b52-43d4-4924-9440-4aacfe36e6bf
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d9b5b619-5045-4978-adf5-bff488c583b6
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d9b731ec-e1e0-4e5c-a515-ab96dc6676d3
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d9da7b2e-bcd0-40fa-b3a7-b8895bfe01f7
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key d9f50f81-fc02-4002-bc69-11a2b8e0d579
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 120 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key da0086a2-cc6a-4820-8b16-93bfb36c4716
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key da01c070-c897-4361-b12f-378f0f85c033
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key da13add7-b440-44fc-89e8-a3d644c09740
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key da4c1aa3-ee75-47b6-96a8-a9024d3ee891
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key da4c3ccf-b934-4f53-8012-2a378f01dc0b
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key da519919-d46c-4ab5-a67b-30611a855f04
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key da61c3ce-7ae0-4713-8d75-0b07e7085ce9
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key da7b032f-4a0f-43f5-910b-5f03019263ec
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key da8b2183-348b-41e4-b6f9-da59af04b018
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dab4d912-37c1-466d-be7a-e2bab6d1a578
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 130 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dac8d28a-dd0e-4988-bf57-930ce506d024
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dae0e42e-1113-43b9-9253-5e25d94e2d79
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key daf85df8-3466-4a8b-b7ba-c2351240b6a5
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key db2c7cbf-6776-40db-95fa-122459ab095d
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key db5b16a1-bf10-4fd9-93a5-f2d1be449ab2
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key db6115df-f6a2-4255-b5ce-54d88cf9109e
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key db640741-ba63-473c-9a04-99453286185c
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key db9ba71a-89aa-407a-8a10-f364ad3d4770
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dba6b0a2-395d-4aac-866a-7373e135aab6
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dbc9853f-7958-4fb9-aa10-d7b7e3b2d9c4
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 140 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dbcaaf26-3e3b-4d02-b41f-ad2044b5abde
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dbe75d52-497b-470f-a67f-f698b3b2082a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dbecaa03-cc9a-4b1d-a0e7-e02d2ade1f5a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dbf19889-1dac-4076-9434-0661e39e8433
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dbfbb575-47de-4d25-b797-a36fa0b10bd6
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dc1fb3dc-aae6-4ea7-b703-b49a82d07e6a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dc29b6d6-fd95-4467-b26e-96be89c29c5b
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dc79d57c-9177-4ff3-9aa1-037f9f92b650
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dcd06733-abb4-4632-a832-eff50854609a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dcd51255-3ca7-49aa-a278-005bdb7e2568
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 150 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dd067cee-5bf0-48a4-8970-26508f2b5ffb
+VLOG[2] (compute-kaldi-pitch-feats[5.5]:main():compute-kaldi-pitch-feats.cc:107) Processed 150 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dd503c25-9484-4fe1-b356-bb3775afa545
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dd536790-57ca-4b4d-8aba-9f10a1b43fa5
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dd624445-da35-4e4a-ae75-21ec7a8eec7f
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dd6473be-c79a-46fe-b078-0d2a0cbff53f
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dd7f9f04-8894-4373-8b43-c4fa7a960af1
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dd8094c8-4a8e-4247-a919-23ea2f8bca61
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dda6d2a4-976e-4395-bc4a-b5e8d2f27e61
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ddae5102-6f7e-4e0f-88ec-8189a48fc917
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ddb28671-e565-4030-a2b9-7f3a972277b9
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 160 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ddcd0c51-e6ce-424f-9a2e-dbe7c8006b52
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ddd42c6c-390a-42e5-9c0c-56dd98f01ff0
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ddefaa8b-37c4-4404-8ad8-26089fd951ae
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key de16699d-431d-449c-b306-8eb644ba09df
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key de1d2ab5-94fe-4697-93f3-d2a9874bdf82
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key de5e97a4-6509-4367-8d2a-8eb3f00f5556
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key de716945-e420-445c-b97f-2e610c331c4f
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key de996f83-52e6-4e41-97af-89c6c0bb7e4b
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key deb77171-d064-4c24-90b9-102c138c96ff
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key debf4420-849c-4037-9c7a-1ea9b2c3cd96
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 170 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dec79eec-2626-44ac-bd6a-92612231244d
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key def464e2-e871-49c4-8cfe-026439b5ac8e
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key df0fc74d-6fee-4964-a220-6daf30e546f5
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key df105deb-71d2-4d1b-8331-806ced2b5e6c
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key df1baa56-d03b-49f2-ac36-94db677ba903
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key df27f570-a7a8-48f1-b659-fb3edd2db961
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key df2a9e1c-cc45-4800-bb97-58598ef135b6
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key df327719-53d3-45b5-a2a1-1b73c04a1c22
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key df44f26f-db9d-4072-9d84-4b968b375fc8
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key df451b29-7e99-4cbd-b3cd-45acc28e353a
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 180 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key df45f36d-0f02-46ca-8c6e-df53e8247e02
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key df4b3860-d229-4ca5-a241-0c7fe6e03a27
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key df4cac30-1344-4f07-b319-e8b77f7ac4d7
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key df7591f8-3ad7-4c6a-bdc9-7c549b85fc02
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key df819388-5299-4af4-97fc-c5c4a217d8eb
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dfa767dc-7a5e-4816-befe-ffc130ccf98d
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dfaafe29-0ccc-4913-b390-c1f334edc892
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key dfd123c0-9443-4659-9bf4-d2e8a1e04015
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e045b965-dfdf-4494-b9b7-5d3fcb79218b
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e05cd135-0cea-4b3b-a60b-59d23eeb9ba5
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 190 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e0d2801f-dfe1-429c-b04d-1df62b3aa9d8
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e0d47f1a-42e0-4490-b552-552851c011e7
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e0dfb60f-9be2-4716-9892-0a7164c59348
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e0e7bf18-96e6-428d-a37e-be01aaedb4d3
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e11bac36-b999-4446-9e31-cd0af9bbae25
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e15fdeb6-ec93-4299-b875-8f7a3a682fc1
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e1721f18-471d-4237-ad9a-4c280e8a235f
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e195fbed-185a-4552-a516-38db39aa6b3a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e1e2cb37-8d1a-48e6-9556-1382126a4ec2
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e1edfcb3-3a12-4bb9-9f7a-71af584ac597
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 200 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e1f4a66f-efc9-4b0d-8269-f307f791ae7c
+VLOG[2] (compute-kaldi-pitch-feats[5.5]:main():compute-kaldi-pitch-feats.cc:107) Processed 200 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e25e67fa-25d4-480a-a177-d09526b95c06
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e28036a3-cd33-4d22-986c-43880bbd500e
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e29a448b-e203-46a0-9cac-89582db927be
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e2a52e34-9fb5-4693-91f5-764c1addfd55
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e2bab46c-82cd-450c-acc0-a10180ebec17
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e2d18e7a-3857-412e-8112-4f8ece494bf5
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e2ef97cb-a9aa-4547-be93-0b1fd22a53cb
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e2fda9f5-a5df-4573-aa4b-01c0fb625fdb
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e30c6b5f-6b79-48e2-a962-dcf47e122b5a
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 210 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e310bad7-fa55-4ed8-9be5-699f25b3e892
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e315a5e1-206c-46c1-9a5f-828ff77b828f
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e31ebab7-79a6-4084-87b7-e3c938b71101
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e33830e7-5c6b-4208-a365-8f741ecea617
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e35cef22-cfb5-4c1a-8083-7c55d778b0d0
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e35f2bc0-1d28-4692-9c61-d65fee521645
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e3938deb-d560-4b8e-b0b8-128b058b0642
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e39c107c-8fd0-4fd4-a00d-90f004c4a854
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e3cdf45f-f878-4414-a536-c8bdf63b1633
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e3d94de1-f087-4289-ad93-d84f6d075267
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 220 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e40edef1-1f6b-4463-9e85-3175d18a289b
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e415cf10-0ffb-409e-be82-6e09334e576c
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e41cdc08-95e4-4ee9-8021-eacf50db66da
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e439b54a-ee0b-474e-9775-351482e7454a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e48e5045-d31f-4cdd-90b3-77789b441eed
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e4a0b356-10fc-460b-a89e-8022e2eb61e3
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e4bb6635-e04a-4620-87c4-b28d3de4310c
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e4bcf8ce-6751-4022-93d8-45e0f8c3613d
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e4e9f7b7-e638-4b2b-8338-62c660ace5a0
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e5033e80-17bc-4a56-ad0b-266ddfe07b0c
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 230 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e506eb47-4e0e-4587-9d18-66929f4f2b12
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e5681abb-1371-4823-90c1-1c02522fdf04
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e573f8e6-7256-457c-b77d-6ba3d55fe54a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e57bad2a-88be-4535-b71d-91eb088dd516
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e5b9b98b-d190-46f6-a46e-48b1cd884560
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e5e28377-df5a-44a8-99a8-229ea33ac4bf
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e60b77f3-6ac6-4484-b69b-c2812d0233b7
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e60f5cbb-da21-433d-8753-1a9b7345dbf9
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e658f1f3-52c4-4d41-91a5-ff50fddc1246
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e668d040-7ac0-4b78-9a25-dac3a268284f
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 240 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e68b3ac7-df71-4d7a-9273-bbf51e82a2b3
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e6a624d1-666b-40c7-b64a-088d4c0be1b7
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e6aca79f-d7f9-4076-b77b-17e3fb3a9b7b
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e6ff3303-906c-4150-83f0-9625473f5c8e
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e7271792-8130-4e99-8ab6-10b1a180fb62
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e7278d24-0dcf-41c0-a78a-0abbbd4982d4
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e767107f-a69d-4624-bd1b-78b93ed37b6b
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e7803eb3-f0d7-478c-abb5-bdaa85049bb6
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e796cc9d-5a08-4b6d-a159-068dce1106b6
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e7ae9092-0325-4e2d-bd52-88362a153583
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 250 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e7d885ed-558b-4bdd-aed2-f0823db5d755
+VLOG[2] (compute-kaldi-pitch-feats[5.5]:main():compute-kaldi-pitch-feats.cc:107) Processed 250 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e7e54329-4532-47e8-b655-b9073bf713aa
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e7f35598-ad48-4e89-92a4-7c814914913c
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e83fff86-c597-4d56-9631-57335a0a10a5
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e856b57d-cf6a-4ebd-871b-b8f419bb0a09
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e85fe073-8b98-4421-9d5c-4631ca91acfc
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e86aa5cf-b2a2-490e-a78b-173b91e89dcd
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e86ecc14-ebb0-4fc9-8dfe-e49a5818b4da
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e87cb19e-a616-426c-8ea6-791e7d587325
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e8a62af5-27e8-4fda-80c3-b8d923a4f16d
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 260 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e8e04c54-28bd-4c76-ad42-f91742e3da7c
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e906912f-2659-4fe5-82d2-62b2f5af2601
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e97bf252-36fc-4efa-9449-714306c279b9
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e97f5d4d-a9ac-452b-a78c-7a64bb42ec0e
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e9bc1382-b6f7-4300-a696-310cb6f1678e
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key e9ea4d4e-793b-49b9-8591-571e8d0bef9d
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ea23f39f-fe06-4118-a506-52673d3790c9
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ea29523a-32ba-47a7-941c-cc177aa9f296
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ea625bca-b520-4203-93ab-5af74ec75bb2
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ea6e1f10-d2f9-46b4-9087-35ad4d54a3f2
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 270 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ea77003e-b282-4b99-916c-c13afa7de510
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ea79c67d-0a85-48ea-b1d3-a37d692e0fab
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ea85a241-c80a-4ad8-95cf-fc650a98cfdc
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ea886fbc-b424-4da6-b07a-7598fb7c5bc6
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ea891f8d-5174-45ff-9a94-463b9f5daaf5
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ea9fe1ab-b6c1-485f-a141-8ed257c11f68
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ead05c5b-ccc7-471e-9b55-135981d5832c
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ead1dfa5-d209-4283-8caa-c43cda5d400b
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key eae58893-857c-40a6-88cc-451eefbe2d9a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key eaefc644-f379-4673-b8fe-515b0f9ee740
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 280 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key eaf827dd-9937-48eb-9d49-7d9031c8e759
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key eb1081db-1ed6-43f4-8f33-b1199d9bd761
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key eb11ed9b-6d48-43d3-b4eb-81e411b3f4bb
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key eb69f999-4e40-4b39-887c-4bbe80112969
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key eb950e2e-a829-4e70-a3f8-5545bc720e08
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ebaeec59-397d-44dd-8567-39e23c9a636c
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ebb64c39-c416-48b1-955f-885a5e018656
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ebd30a90-2d4d-44a0-81af-612c4b9b3ba2
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ebe081ec-68da-41f8-a12b-7836b6224bb8
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ebfd2ef0-2afa-4497-9b43-0aa6764e7ba5
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 290 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ec0dc824-d989-4d8a-841e-e266b30b2c70
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ec167bd7-826e-4792-babd-de5edb36dba2
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ec281260-5e63-4a07-bc91-a79ae6e250de
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ec4d89c0-638a-47f2-9195-ae676bb4f6bc
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ec53f2cc-7c96-4145-bb5c-aa9194d87aa5
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ec5d16b2-40c6-429c-ad0c-1fad272d9da4
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ec903103-575c-473e-bc3c-fb2ec83e9bf8
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ecac2e39-1137-4103-8648-0b9d4bbf764a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ecac5380-ac91-4ac6-b7a3-905ad60557d9
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ecd8dbf7-6ce5-4a0f-b20f-db2de5fa535a
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 300 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key eceff7f0-d201-4707-aa78-4b5c42a6a844
+VLOG[2] (compute-kaldi-pitch-feats[5.5]:main():compute-kaldi-pitch-feats.cc:107) Processed 300 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ed0236f3-bb4f-47ac-b90c-35d16dca56ea
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ed075879-ac78-4ddc-a174-ce3de1eaeea1
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ed33021f-081b-48a2-b275-da225bec0d8b
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ed3fd7ea-0185-4b91-a9cb-3cfea33cd42a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ede5d41f-6d38-433f-af32-99426878e99e
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ede73e99-1506-4b74-a36c-77ce53edb117
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key edf9c22a-3615-4165-9bf5-7607af2d935c
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ee0549df-d620-4d5d-b013-0394f475724e
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ee0af691-a243-4262-bf97-72b4287c7fff
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 310 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ee19bc04-ee80-4cf7-aff3-27ed8aa49ac3
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ee2ae3cb-4a80-4e45-9cbe-aa1baffd2631
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ee88da1f-6069-4f34-b595-4e72bf1a48cc
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key eebbe0e9-4005-4887-bfe6-40e464159c8c
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key eec06445-58ae-496e-916b-0ea443596fe4
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key eec98481-6663-4ce5-8f1c-362c1a03ff35
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ef07c96d-cf2f-4520-b517-eab3ca54183d
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ef2d8f9f-910c-4ae4-9404-a6bffab4c89d
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ef3e909e-aa2a-4e90-a03b-9242a117a0b7
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ef4c3f67-7d5e-4016-bf66-475ed571c37c
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 320 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key efa04a27-cf01-463f-b4b0-7d7446e3ad8b
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key efa1637e-6f67-415d-b65c-cce0769ae37a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key efc91130-5591-4c06-9a65-52cfdb87fa2b
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key efd6c676-21ea-4adb-b729-d4b846521ffa
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f031e16b-02c0-47bc-bdba-4eb2ca927876
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f07ee657-273c-48f5-8c13-289e26836204
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f0c128b3-3a6b-417a-a788-0af88a696048
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f0ca6fb0-f279-4225-803b-b45f900be69a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f0d5c1b3-122a-42ae-8f9d-a347feb9ca48
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f11358f2-2c22-4396-88d2-d7a48d677e53
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 330 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f113b910-13e5-4078-a5e8-6abccfbbd8c8
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f1182f14-007c-49c5-a7a3-d060e8123997
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f14db09f-035b-4f6c-bdad-8b1ce10b7d2a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f17a1219-8b43-4edd-8521-5627b997bfed
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f18f27bb-8355-4d5c-af0a-5f936538f747
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f1940200-3ef5-4cb6-bb61-b1fdc5a1e274
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f1a69e16-8725-497f-8974-0348e3120add
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f1a81dd3-cab1-4472-a448-a56ad8fbebde
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f1b57c5b-9f0b-4f53-b0a2-d0bb819cb0c4
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f1b9c69c-2159-460b-9587-02de4a8397e6
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 340 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f1bc3a5a-07f9-4748-8969-6f9eaf6aef76
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f1e81ffc-71be-40b6-8f60-cdcdb3d83625
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f1f6a9ca-113b-4277-af33-cecf2a7c0726
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f1f6d270-6c60-4618-8c11-4e6439f85c96
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f21872a4-7798-454e-9b68-8f615b3c719a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f24014c4-28bb-43e1-a19e-15cd86fc7074
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f248e087-8669-4ebb-905e-c7b62524e8bd
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f24fcdf3-3695-4f07-b4a1-1e7b62efccc6
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f272826d-4c81-4099-84ad-56c5032340c9
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f2753956-c44c-4eca-bffc-a95187c7ad49
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 350 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f27a7f5e-9a62-4805-bf10-7b2b47087507
+VLOG[2] (compute-kaldi-pitch-feats[5.5]:main():compute-kaldi-pitch-feats.cc:107) Processed 350 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f2846da8-58df-4486-951e-18bf1104e257
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f28c8f85-3c3d-490b-8380-656ffa604eaf
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f2a0564b-78f3-4dd4-b04d-16bfded58cf4
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f2b51571-ff07-4198-841d-88752e12b3b0
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f2e78a77-1e6d-4bdf-ba86-90e5c581f05d
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f300bcfe-655f-4dec-a36e-cc06700642d8
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f30cd052-a130-46c2-830b-4efd5da3a907
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f3313a88-0ae5-4a74-baae-a71d80bc72b0
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f33c1167-94d2-47a7-ad85-80049e4be57b
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 360 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f34c0e27-511f-472f-a396-2fbc8bc6e3c0
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f3634beb-56ac-4df2-b774-0bd602644d08
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f365614e-e2b2-4313-b78a-c523bcd4b319
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f3a1ee69-335d-4a4b-b4ac-d699a6b7832b
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f3a433bf-901b-4ff4-bab7-1c431680edd7
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f3bf4282-e643-4c07-b665-ff0ac59a313c
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f3cf5ac3-5927-4f85-889c-d14c293d0fff
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f4028864-7034-4e91-881f-a11b2fc84e4a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f40637de-971b-43ee-8f05-6a7257c83eee
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f420d349-b914-4fa3-9118-4b225ec9ba03
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 370 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f442f842-819c-4857-8b20-10dc40362685
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f44a1a47-898c-488d-82bd-a955d99c2599
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f45e0857-6c66-442e-bb65-c772e92e03d4
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f4f5f1c4-179c-4f42-97a1-4f337d4b1381
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f50517e0-114d-4a7b-8665-769f9ad7f117
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f50726b0-df25-46d1-8776-3d07ba01851c
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f509a0e3-c756-4a05-8b0c-5b7435a4b141
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f51a2c34-7bbc-4977-a5ef-b20530a296cb
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f54143d9-4975-49be-9364-755c2c84ccce
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f558bfed-75dc-4427-b8c5-1d30920f06bc
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 380 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f5665d9d-1585-427b-8ff3-c62944c19aa2
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f5751e5c-c5d9-4a0c-9869-64fadd0fb42b
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f57993d7-16d8-4dc7-a551-2ac0d77561bc
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f59e5a70-9498-422e-9e12-a5ba59903793
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f5a082ed-284a-4797-bbba-67e2a4eaa2a0
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f5de4921-7335-4eb6-b57e-0ba90f6d6867
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f5e15330-9af4-4370-9767-3e9a83554f58
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f5e41622-7fad-4e09-961c-8f9c4d466f7a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f5e7047d-daa4-4cce-ae63-0d5fc9b2af1c
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f5ecf526-54d2-4319-af1f-e1ce31cf2778
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 390 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f5f6daaf-7d6c-4846-bb2f-1aca149849d8
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f623307b-ef0c-496e-ae21-d9c1a7072994
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f628f269-334e-4e57-a6dd-ae83bbb0ddd1
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f62da9e1-3de7-4cfe-8811-549985b2eb99
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f6314b90-671d-49e2-b2a7-4ed2f27b1c78
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f6775179-3c24-4e41-a72f-15e1422e4cf0
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f68250ba-2f48-46a0-93f0-01206d598a9c
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f683068a-fa48-4de7-aa35-83d42b565c7a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f68520c0-04d9-4329-ba8b-88cd819b4cb6
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f69257d6-58e7-4145-b7f8-51255c3c3865
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 400 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f6a66ed7-603c-47e7-a961-d4354f1ad285
+VLOG[2] (compute-kaldi-pitch-feats[5.5]:main():compute-kaldi-pitch-feats.cc:107) Processed 400 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f6a9b3ae-d73d-47ac-970b-5fb971814a5f
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f6b81146-7319-4c93-b807-22fd62c46ae9
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f6bc031f-f6a9-44d2-8625-bbe579092195
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f6bc7c1b-b882-46c6-b463-6148f808a3b7
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f6cec588-6182-4bc5-918d-e515fe6bcd08
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f70f56e7-70a4-4485-b0bf-66e092a539e4
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f730adfe-7da1-4191-a308-8e4f22a71f69
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f73832c0-29f8-4e49-9a88-2a56075e2b8c
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f7437105-482f-473d-b5e8-af2304be6d67
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 410 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f78febca-49c4-4f46-bcb0-0e68bc68270c
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f796df1d-4a8d-4058-97fe-f561414da6ef
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f79ac319-8756-45d4-97f1-8dfda49f689d
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f7be3e2a-1074-4225-bad4-0460fa3f863d
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f7de39b8-3eac-4f2e-bb4c-32d1ab922510
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f7fd2c42-e75d-460d-b63d-19161c19fcf8
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f83b0b28-1ca6-4a9d-878d-c82cbdea268d
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f876babd-dd84-4b35-b978-d0d7d828dc01
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f87ad5e7-8f86-4413-8db6-b579d81e6b37
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f87b8cf7-6aed-409f-9a8a-c6df375c9a9c
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 420 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f891a4b2-fae6-46a1-be48-48da7d47cd20
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f897824b-c4fc-41ca-afa1-d7123183a8a1
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f89cba55-81fb-4984-a827-623ea2d61f65
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f8a2d3ea-29d3-41bb-a466-25022ed94f54
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f8d8d0d2-f5ad-4673-adfe-9d2b1c64e677
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f8e65143-55d7-4f2b-ad5f-26ed510d2485
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f94f2fdb-96ab-4438-9413-692ad8577937
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f954179d-2675-4a89-bfbf-b7abec1a75b6
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f9550842-ee4e-4dc5-aa4e-68080977a99d
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f9a7f0d8-ab94-4183-a4a8-508e0878c36d
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 430 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f9a9b2c4-4ddf-4798-a3d0-b2ac3d3d3469
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f9c84a20-4ea3-4fff-899c-6dca97405af6
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key f9d9a122-ccb0-4884-83d4-1783c7d8f582
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fa06923e-6045-44a9-abc3-f91eb6f953f5
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fa073067-931d-49ef-b0ad-8b1e5513e4bb
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fa0a9f25-1dad-494e-97ba-3e144fb4163d
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fa0b1193-a2b6-45df-b7fe-f841b63c40e8
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fa124677-0fb3-4c09-a7a4-58ec12c250eb
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fa1f15c7-d4b3-405d-a7ba-5b9ef6fd8b71
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fa216ce0-f54d-4cfd-83ec-450bb4a479d3
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 440 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fa3ad5a8-85db-482b-ba93-04d06cbb11ed
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fa40b952-55ee-4465-8d69-6a55592ec41c
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fa77e893-4e88-4029-94ec-13ac50b058d5
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fa92b173-7a29-4070-8958-3d1df283cad2
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key faa5b2a6-5c44-4c9a-828e-14441238063a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key faa93ee1-621f-4b38-be95-ee6562ca8a5c
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fac4eb00-3a2d-4648-bab4-5e8681b36c75
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fac86c3b-b4c8-42c4-b876-7ff72ac12fd7
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fad7f1cc-22d7-42af-8d80-74941b9f11fe
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fadf2bad-781f-4be3-b947-8a0eb00119d1
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 450 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fafcc6e0-eeb0-4d83-a0da-676aa8efbed9
+VLOG[2] (compute-kaldi-pitch-feats[5.5]:main():compute-kaldi-pitch-feats.cc:107) Processed 450 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fb1fa2d0-7eba-4b30-8c4e-2b9876682d33
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fb3ce09a-2c58-425c-9fa3-730d4ae3f5e6
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fb407397-73c0-4264-bf0c-f3a44809f7d8
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fb96869f-e9ad-4f4e-ba54-671c027cd94b
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fba4a313-6aaf-4f39-8e14-d75b697ddb03
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fba60933-d9b3-4241-a973-392f03e83930
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fbb9a3ba-8563-4d05-b6be-6d0d81ac6540
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fbc3d38e-0ea3-48c8-9e16-54c98ffb22e7
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fbc5c239-c84d-44e2-a57e-1f8f6a2e678f
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 460 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fbdceff8-3ddd-428e-b6cd-2434da214e99
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fbfec7e9-4e37-4ba4-b04a-1ee8d3f40cc5
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fc02e15b-0d98-4ccc-a168-1bb9160b2c61
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fc3c9f38-de23-4d05-83f8-91ba51661006
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fc5203b4-8aa4-43ab-af53-2b65ce42a92a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fc563808-1f82-453e-bf2e-78b468433d46
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fc67c334-69f8-4ef7-9c46-62b88b02d08b
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fc8720b5-12fe-45e2-9e19-a4ebb57feedc
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fcb26d3c-7b7e-4de4-b3a1-c8dce5802a83
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fcb31b16-8d0c-4547-8836-cb5b389f949e
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 470 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fccf43c8-bf2d-4a43-bbe4-9a025b611f9b
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fcd0f0d8-8ee8-463d-876f-65d63b6185d3
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fceea52f-74cb-4588-8f39-32795ef64d2c
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fd1ceaa6-5f61-4aa5-b2ab-dd30d56c745a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fd328ab6-657b-4c1b-9eac-0f01398b6069
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fd4a174d-2d1b-493a-9b80-abde4e69f549
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fd628216-4ab3-4d49-9fe2-c72e4686ed6d
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fd862bba-da7c-4f6f-8685-8bce411352e3
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fd8c7533-dd71-4e10-82b2-7d4d19ed680b
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fd969421-8cfd-44c6-9235-1695074712d6
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 480 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fd9f1956-2e46-472e-8686-c57e8f55b76d
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fdba28ec-0f7d-4533-97a6-9cb7d87584c3
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fde1a8f6-77f0-43e7-a8cb-73144989b85c
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fdef15cb-4562-4930-8fd0-76eda13af2a3
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fe0ffac0-877a-41ee-9e66-f5b2509c89b0
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fe20a2e1-2391-4f77-a040-0f935438e1cc
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fe3d2e59-9462-4c9a-aca8-7a802edf4fb8
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fe4616fc-05db-4ae7-af43-3b74c6b0faf3
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fe472f5f-3511-4cd9-b5eb-2551d3786583
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fe510530-400c-450e-bb7d-3ba331cee967
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 490 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fe511a70-d0d8-49df-b9ff-b157cc3d9d64
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fe5405b0-0f2f-4e9c-bed9-deab8bf58c8a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fe592679-3f1d-4fa1-bf4b-68c4bf112ee0
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fe8ced8c-0f04-4435-8d49-76b0b1c7b7e0
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fe9f774c-0983-40d9-bb61-3570aa5466b8
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fea264e7-9a57-4cd5-8602-a96b6221c27e
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ff05e005-a55c-4d97-8957-cc5cb42ab24b
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ff14a167-4d23-470b-b1a6-ceb66bcb479a
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ff3acf00-5a3e-4926-8243-96d7bf7ff1d3
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ff3fa034-3b2a-433c-889d-600b68db975b
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:181) Processed 500 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ff7dbfd8-66bb-4ec1-b5bc-b13a985c1a7d
+VLOG[2] (compute-kaldi-pitch-feats[5.5]:main():compute-kaldi-pitch-feats.cc:107) Processed 500 utterances
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ffaf9e28-7417-4efe-9e71-1e9b6fc566cc
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ffbc71de-767e-4401-a085-cab6bd6cc66c
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ffdcedac-96c0-494e-8311-ac4a0f5d48bd
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key ffe6dbe5-4445-42d9-8108-26afbb0250e0
+LOG (compute-kaldi-pitch-feats[5.5]:main():compute-kaldi-pitch-feats.cc:110) Done 505 utterances, 0 with errors.
+VLOG[2] (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:182) Processed features for key fff36860-5af6-4065-9f05-24f78e14fbff
+LOG (compute-mfcc-feats[5.5]:main():compute-mfcc-feats.cc:185)  Done 505 out of 505 utterances.
+LOG (process-kaldi-pitch-feats[5.5]:main():process-kaldi-pitch-feats.cc:85) Post-processed pitch for 505 utterances.
+LOG (paste-feats[5.5]:main():paste-feats.cc:158) Done 505 utts, errors on 0
+LOG (copy-feats[5.5]:main():copy-feats.cc:143) Copied 505 feature matrices.
+# Accounting: time=47 threads=1
+# Ended (code 0) at Sun May  8 19:14:41 EDT 2022, elapsed time 47 seconds
