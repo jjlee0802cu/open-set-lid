@@ -1,33 +1,13 @@
-a. Justin Lee (jjl2245), Mustafa Eyceoz (me2680)
-b. 5/8/2022
+Modernizing Open-Set Speech Language Identification
 
-c. Modernizing Open-Set Speech Language Identification
+Justin Lee, Mustafa Eyceoz
 
-d. Project Summary:
-Speech Language Identification is the process of taking audio as an input and determining what
-language is being spoken, if any. There are two subsections to the language identification 
-problem (which will henceforth be referred to as LID): open-set and closed-set. In closed-set LID,
-set of languages to identify is defined, and for every audio input, the "most probable" language 
-within the set is outputted. In open-set LID, however, we also gain the option to "reject" that 
-prediction and detect when the audio input matches none of our known languages well. While 
-most modern speech Language Identification methods are closed-set, we want to see if 
-they can be modified and adapted for the open-set problem. Today, there are a number of 
-modern-day state-of-the-art approaches to language identification, but almost all of them 
-have opted to take the closed-set approach. In an era of data abundance, the limitations
-of the closed-set solution are typically circumvented by including hundreds of languages
-and training on thousands of hours of data for each of them. This workaround is obviously
-still not as ideal as the true open-set solution, though, as it lacks the ability to
-detect and reject or learn unknown languages, and in these cases it will unavoidably output an 
-incorrect prediction. We tackle the open-set task by adapting two modern-day state-of-the-art 
-approaches to closed-set language identification: the first using a CRNN with attention and 
-the second using a TDNN. We enhanced our input feature embeddings using MFCCs, log 
-spectral features, and pitch; and also adapted the aforementioned models to the open-set 
-language identification problem with a threshold function. This threshold is used
-so that if all of the probabilities outputted by the softmax layer are under this threshold,
-the input is deemed out of the set and is rejected. 
+Project Summary:
 
+Speech Language Identification is the process of taking audio as an input and determining what language is being spoken, if any. There are two subsections to the language identification  problem (which will henceforth be referred to as LID): open-set and closed-set. In closed-set LID, set of languages to identify is defined, and for every audio input, the "most probable" language  within the set is outputted. In open-set LID, however, we also gain the option to "reject" that prediction and detect when the audio input matches none of our known languages well. While  most modern speech Language Identification methods are closed-set, we want to see if they can be modified and adapted for the open-set problem. Today, there are a number of modern-day state-of-the-art approaches to language identification, but almost all of them have opted to take the closed-set approach. In an era of data abundance, the limitations of the closed-set solution are typically circumvented by including hundreds of languages and training on thousands of hours of data for each of them. This workaround is obviously still not as ideal as the true open-set solution, though, as it lacks the ability to detect and reject or learn unknown languages, and in these cases it will unavoidably output an incorrect prediction. We tackle the open-set task by adapting two modern-day state-of-the-art approaches to closed-set language identification: the first using a CRNN with attention and the second using a TDNN. We enhanced our input feature embeddings using MFCCs, log spectral features, and pitch; and also adapted the aforementioned models to the open-set language identification problem with a threshold function. This threshold is used so that if all of the probabilities outputted by the softmax layer are under this threshold, the input is deemed out of the set and is rejected. 
 
-e. Tools:
+Tools:
+
 - Python3 environment
 - Python libraries: 
     - Kaldiio https://github.com/nttcslab-sp/kaldiio
