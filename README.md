@@ -10,6 +10,7 @@ We tackle the open-set task by adapting two modern-day state-of-the-art approach
 
 ## Tools:
 
+- Kaldi
 - Python3 environment
 - Python libraries: 
     - Kaldiio https://github.com/nttcslab-sp/kaldiio
