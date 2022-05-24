@@ -2,6 +2,10 @@
 
 #### Justin Lee, Mustafa Eyceoz
 
+## Publications:
+
+- https://arxiv.org/abs/2205.10397
+
 ## Project Summary:
 
 Speech Language Identification is the process of taking audio as an input and determining what language is being spoken, if any. There are two subsections to the language identification  problem (which will henceforth be referred to as LID): open-set and closed-set. In closed-set LID, set of languages to identify is defined, and for every audio input, the "most probable" language  within the set is outputted. In open-set LID, however, we also gain the option to "reject" that prediction and detect when the audio input matches none of our known languages well. While  most modern speech Language Identification methods are closed-set, we want to see if they can be modified and adapted for the open-set problem. Today, there are a number of modern-day state-of-the-art approaches to language identification, but almost all of them have opted to take the closed-set approach. In an era of data abundance, the limitations of the closed-set solution are typically circumvented by including hundreds of languages and training on thousands of hours of data for each of them. This workaround is obviously still not as ideal as the true open-set solution, though, as it lacks the ability to detect and reject or learn unknown languages, and in these cases it will unavoidably output an incorrect prediction. 
